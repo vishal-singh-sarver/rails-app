@@ -1,0 +1,19 @@
+<h1><%= @information.name %></h1>
+
+<p>
+  <strong>Description:</strong>
+  <%= @information.description %>
+</p>
+
+<p>
+  <strong>Created At:</strong>
+  <%= @information.created_at.strftime("%B %d, %Y") %>
+</p>
+
+<p>
+  <strong>Updated At:</strong>
+  <%= @information.updated_at.strftime("%B %d, %Y") %>
+</p>
+
+<!-- Back Button -->
+<%= link_to 'Back', root_path, class: 'btn btn-secondary' %>

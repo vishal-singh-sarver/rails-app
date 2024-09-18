@@ -1,13 +1,9 @@
 class TaskController < ApplicationController
-  def create
-  end
-
-  def update
-  end
-
-  def destroy
-  end
-
   def index
+    @informations = Information.all
+  end
+
+  def show
+    @information = Information.find(params[:id])
   end
 end
